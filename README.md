@@ -65,17 +65,23 @@ pip install pyspark
 
 ### Step 6: Test PySpark
 
-Start a Python interactive console and test PySpark:
+Start a Python interactive console:
 
 ```python
 # Start Python interactive console
 python
+```
 
+Test PySpark:
+
+```python
 # Test PySpark
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 print(spark.version)
 ```
+
+If the Spark version prints without errors, PySpark is set up correctly.
 
 ---
 
